@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body{
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+  <title>CS50 Survey</title>
+</head>
+<body>
+  <div id="main">
+
+    <h1 id="title">Quick Survey</h1>
+    <p id="description">This is a quick survey regarding Harvard's CS50W - Introduction to Web Design using Python.</p>
+    <form id="survey-form" class="" action="index.html" method="post">
+      <div class="input">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" value="" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" name="email" value="" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="input">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" name="age" value="" placeholder="Enter your age" min="1" max="125" required>
+      </div>
+
+
+
+      <div class="status">
+        <label for="status">Please select your current status:</label>
+        <select id="dropdown" class="" name="status" required>
+          <option value="student">Student</option>
+          <option value="part-time">Part Time Job</option>
+          <option value="full-time">Full Time Job</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="selection">
+        <label for="rating">How would you rate the difficulty of the course?</label>
+        <ul>
+          <li><input type="radio" name="rating" value="Too Demanding"><label>Too Demanding</label></li>
+
+          <li><input type="radio" name="rating" value="Demanding"><label>Demanding       </label>
+          </li>
+
+          <li><input type="radio" name="rating" value="Regular"><label>Regular</label></li>
+
+          <li><input type="radio" name="rating" value="Easy"><label>Easy</label></li>
+        </ul>
+      </div>
+
+      <div class="selection">
+        <label for="future">Which of the following topcs would you like to learn in the future?</label>
+
+        <ul>
+          <li><input type="checkbox" name="future" value="front-end"><label>Front End        </label></li>
+
+          <li><input type="checkbox" name="future" value="back-end"><label>Back End</label></li>
+
+          <li><input type="checkbox" name="future" value="computer-vision"><label>Computer Vision</label></li>
+
+          <li><input type="checkbox" name="future" value="machine-learning"><label>Machine Learning</label></li>
+
+        </ul>
+      </div>
+
+
+      <div class="text">
+        <label for="comment">Feel free to let us know how you felt about the course as a whole:</label>
+
+        <textarea name="comment" rows="4" cols="20"></textarea>
+
+      </div>
+
+      <div class="button">
+        <button id="submit" type="submit" name="submit">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
