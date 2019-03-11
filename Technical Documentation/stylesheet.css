@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "DTLProkyon";
+    src: url("C:/Users/Desktop/Gabo/MOOCs/FCC/Responsive Web Design/Technical Documentation/DTLProkyon.ttf");
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+#header-top{
+  height: 5em;
+  background-color: #0c4b33;
+  font-family: "DTLProkyon", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#header-top img{
+  height: 2.5em;
+  margin: auto 1em;
+  flex-basis: 25%;
+  text-align: left;
+}
+#header-top i{
+  color: white;
+  font-size: 2em;
+  text-align: right;
+  flex-basis: 75%;
+  margin: 0 1em;
+}
+#header-bottom{
+  background-color: #44b78b;
+}
+#header-bottom h1{
+  margin: 0;
+  padding: 0.5em;
+  color: #c9f0dd;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+/* NAVBAR */
+.container{
+  display: flex;
+  flex-direction: row;
+}
+#navbar{
+  background-color: #f8f8f8;
+  width: 60em;
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#navbar header > h2{
+  /* text-align: center; */
+  color: #0c3c26;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+#navbar p{
+  color: #0c3c26;
+  margin: 2em 0 ;
+}
+#navbar li{
+  color: #0c3c26;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin: 1.5rem 0;
+}
+#navbar a{
+  text-decoration: none;
+  color: inherit;
+
+}
+#navbar-download{
+  margin-top: 2em;
+}
+
+
+/* MAIN */
+.break-line{
+  height: 1px;
+  background-color: #0c3c26;
+  opacity: 0.3;
+}
+#main-doc{
+  padding: 1em 1.5em;
+}
+#main-header h2{
+  color: #0c3c26;
+  margin: 1rem 0;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+#main-header p{
+  color: #0c3c26;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.main-section{
+  margin: 2em 0;
+}
+.main-section h3{
+  color: #0c3c26;
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+.main-section p{
+  color: #0c3c26;
+  font-size: 1rem;
+  text-align: justify;
+  /* font-weight: 200; */
+}
+.main-section li{
+  color: #0c3c26;
+  font-size: 1rem;
+  text-align: justify;
+}
+.code{
+  background-color: rgb(234, 234, 234);
+  padding: 0.5em 1em;
+  border-radius: 3px;
+}
+.main-section code{
+  font-size: 1.1em;
+}
+#introduction{
+  margin-top: 2.5em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px){
+  #navbar{
+    display: block;
+  }
+}

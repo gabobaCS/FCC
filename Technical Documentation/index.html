@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Django Documentation</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-top">
+        <img id="logo" src="https://static.djangoproject.com/img/logo-django.42234b631760.svg" alt="">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div id="header-bottom">
+        <h1>Documentation</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav id="navbar">
+        <header>
+          <h2 id="navbar-header">Contents</h2>
+        </header>
+        <div class="break-line"></div>
+        <ol>
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+          <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+          <li><a href="#If,_Else_Statements" class="nav-link">If, Else Statements</a></li>
+          <li><a href="#While_Loops" class="nav-link">While Loops</a></li>
+        </ol>
+
+        <h2 id="navbar-download">Download</h2>
+        <div class="break-line"></div>
+        <p>Offline (Django 2.1): HTML | PDF | ePub </p>
+      </nav>
+
+      <main id="main-doc">
+        <header id="main-header">
+          <h2>Django Documentation</h2>
+          <p>Everything you need to know.</p>
+        </header>
+
+        <section id="Introduction" class="main-section">
+          <header>
+            <h3>Introduction</h3>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <ol>
+            <li>
+              The admin is enabled in the default project template used by <b>startproject</b>.
+            </li>
+            <br>
+            <li>
+              Add <b>'django.contrib.admin'</b> and its dependencies - <b>django.contrib.auth</b>, <b>django.contrib.contenttypes</b>, <b>django.contrib.messages</b>, and <b>django.contrib.sessions</b> - to your <b>INSTALLED_APPS</b>setting.
+            </li>
+            <br>
+            <li>
+              By default, logging in to the admin requires that the user has the <b>is_superuser</b> or <b>is_staff</b> attribute set to <b>True</b>.
+            </li>
+            <br>
+            <li>
+              Finally, determine which of your application’s models should be editable in the admin interface. For each of those models, register them with the admin as described in <b>ModelAdmin</b>.
+            </li>
+            <br>
+            <li>
+              Hook the admin’s URLs into your <b>Database_py</b>.
+            </li>
+          </ol>
+        </section>
+
+        <div class="break-line"></div>
+
+        <section id="Hello_World" class="main-section">
+          <header>
+              <h3>Hello World</h3>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+          <section class="code">
+            <code>print("hello world")</code>
+          </section>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <section class="code">
+            <code>
+              python manage.py runserver
+            </code>
+          </section>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+
+        <div class="break-line"></div>
+
+        <section id="Data_Types" class="main-section">
+          <header>
+              <h3>Data Types</h3>
+          </header>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+
+          <section class="code">
+            <code>
+              a = 12 + 4 <br>
+              b = 'hello' <br>
+              c = True <br>
+              d = [1, 2, 3, 4]
+            </code>
+          </section>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <div class="break-line"></div>
+
+        <section id="If,_Else_Statements" class="main-section">
+          <header>
+              <h3>If, Else Statements</h3>
+          </header>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+          <section class="code">
+            <code>
+              if x == 1:<br>
+              &emsp;  print(x)<br>
+              <br>
+              elif x == 2:<br>
+              &emsp;  print(y)<br>
+              <br>
+              else: <br>
+              &emsp; print("Hello World")
+            </code>
+          </section>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+
+        <div class="break-line"></div>
+
+        <section id="While_Loops" class="main-section">
+          <header>
+              <h3>While Loops</h3>
+          </header>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+          <section class="code">
+            <code>
+              while x < 100: <br>
+              &emsp; x += 1 <br>
+              &emsp; print("Added One")
+            </code>
+          </section>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+      </main>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
